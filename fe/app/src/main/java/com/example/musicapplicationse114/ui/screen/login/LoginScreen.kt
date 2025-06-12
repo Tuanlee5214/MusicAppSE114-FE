@@ -250,10 +250,3 @@ fun LoginScreen(navController: NavHostController, viewModel: LoginViewModel, mai
     }
 }
 
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun LoginScreenPreview()
-{
-    val navController = rememberNavController()
-    LoginScreen(navController = navController, viewModel = LoginViewModel(null, null), mainViewModel = MainViewModel(), homeViewModel = HomeViewModel(null, null))
-}
